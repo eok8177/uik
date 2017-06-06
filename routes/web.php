@@ -11,6 +11,20 @@
 |
 */
 
+// Admin
+
+Route::get('admin', function () {
+  return redirect('admin/dashboard');
+});
+
+Route::group(['as' => 'admin.', 'middleware' => 'auth', 'namespace' => 'Admin', 'prefix' => 'admin'], function() {
+  App::setLocale('ua');
+    // Dashboard
+  Route::get('dashboard', ['as' => 'dashboard', 'uses' => 'DashboardController@index']);
+});
+
+// Frontend
+
 Route::get('/', function () {
     return view('welcome');
 });
