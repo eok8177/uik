@@ -5,6 +5,9 @@
 
 {!! Form::open(['route' => ['admin.user.update', $user->id], 'method' => 'PUT', 'class' => 'form-horizontal']) !!}
 
+  <input type="text" name="" class="autofeel-hack">
+  <input type="password" name="" class="autofeel-hack">
+
   <div class="form-group">
     {!! Form::label('username', Lang::get('messages.username'), ['class' => 'col-md-2 control-label']) !!}
     <div class="col-md-2">
@@ -24,7 +27,7 @@
   <div class="form-group">
     {!! Form::label('password', Lang::get('messages.new_password'), ['class' => 'col-md-2 control-label']) !!}
     <div class="col-md-2">
-      {!! Form::password('password', '', ['class' => 'form-control']) !!}
+      {!! Form::password('password', ['class' => 'form-control']) !!}
     </div>
   </div>
 
@@ -38,4 +41,13 @@
   </div>
 {!! Form::close() !!}
 
+@endsection
+
+@section('styles')
+  <style type="text/css">
+    .autofeel-hack {
+      position: absolute;
+      top: -999px;
+    }
+  </style>
 @endsection
