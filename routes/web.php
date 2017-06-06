@@ -21,6 +21,8 @@ Route::group(['as' => 'admin.', 'middleware' => 'auth', 'namespace' => 'Admin', 
   App::setLocale('ua');
     // Dashboard
   Route::get('dashboard', ['as' => 'dashboard', 'uses' => 'DashboardController@index']);
+
+  Route::resource('user', 'UserController');
 });
 
 // Frontend

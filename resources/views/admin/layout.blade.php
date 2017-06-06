@@ -54,11 +54,11 @@
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> <span class="hidden-xs">{{ Auth::user()->username }}</span> <b class="caret"></b></a>
             <ul class="dropdown-menu">
-              {{-- <li><a href="#"><i class="fa fa-fw fa-gear"></i> <span class="hidden-xs">Settings</span></a></li> --}}
               <li>
-                <a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
-                  <i class="fa fa-sign-out fa-fw"></i> Log Out
-                </a>
+                <a href="{{ route('admin.user.edit', ['id' => Auth::user()->id]) }}"><i class="fa fa-fw fa-gear"></i> <span class="hidden-xs">@lang('messages.settings')</span></a>
+              </li>
+              <li>
+                <a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();"><i class="fa fa-sign-out fa-fw"></i> @lang('messages.logout')</a>
               </li>
             </ul>
           </li>
