@@ -70,7 +70,7 @@
       <div class="collapse navbar-collapse navbar-ex1-collapse">
         <ul class="nav side-nav">
           <li>
-            <a href="{{ route('admin.dashboard') }}"><i class="fa fa-fw fa-tachometer"></i> @lang('messages.dashboard')</a>
+            <a href="{{ route('admin.slider.index') }}"><i class="fa fa-fw fa-picture-o"></i> @lang('messages.slider')</a>
           </li>
         </ul>
       </div>
@@ -113,6 +113,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <script src="/vendor/unisharp/laravel-ckeditor/ckeditor.js"></script>
   <script src="/vendor/unisharp/laravel-ckeditor/adapters/jquery.js"></script>
+  <script src="/vendor/laravel-filemanager/js/lfm.js"></script>
   <script src="{{ asset('js/admin.js') }}"></script>
   @yield('scripts')
 </body>

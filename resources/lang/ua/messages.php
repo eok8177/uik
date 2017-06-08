@@ -2,6 +2,12 @@
 
 return [
 
+	'action' => 'Дія',
+	'create' => 'Створити',
+	'save' => 'Зберегти',
+	'chose' => 'Вибрати',
+	'delete' => 'Видалити',
+
   'dashboard' => 'Головна',
   'to_site' => 'На сайт',
   'settings' => 'Настройки',
@@ -11,7 +17,11 @@ return [
   'username' => 'Ім\'я',
   'new_password' => 'Новий пароль',
   'email' => 'E-mail',
-  'save' => 'Зберегти',
-
+  'image' => 'Зображення',
+  'slug' => 'Ссилка',
+  'title' => 'Заголовок',
+  'description' => 'Опис',
+  'enabled' => 'Активна',
+  'slider' => 'Слайдер',
 
 ];

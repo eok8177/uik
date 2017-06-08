@@ -22,7 +22,11 @@ Route::group(['as' => 'admin.', 'middleware' => 'auth', 'namespace' => 'Admin', 
     // Dashboard
   Route::get('dashboard', ['as' => 'dashboard', 'uses' => 'DashboardController@index']);
 
+  Route::put('ajax/status', ['as' => 'ajax.status', 'uses' => 'AjaxController@status']);
+
   Route::resource('user', 'UserController');
+
+  Route::resource('slider', 'SliderController');
 });
 
 // Frontend
