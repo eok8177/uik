@@ -18,7 +18,7 @@
   @foreach($slider as $item)
     <tr>
       <td>
-        <a href="{{ route('admin.slider.show', ['id'=>$item->id]) }}" class="btn fa fa-eye"></a>
+        {{-- <a href="{{ route('admin.slider.show', ['id'=>$item->id]) }}" class="btn fa fa-eye"></a> --}}
         <a href="{{ route('admin.slider.edit', ['id'=>$item->id]) }}" class="btn fa fa-pencil"></a>
         <a href="{{ route('admin.slider.destroy', ['id'=>$item->id]) }}" class="btn fa fa-trash-o delete-item"></a>
       </td>

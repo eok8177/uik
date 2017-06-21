@@ -72,6 +72,28 @@
           <li>
             <a href="{{ route('admin.slider.index') }}"><i class="fa fa-fw fa-picture-o"></i> @lang('messages.slider')</a>
           </li>
+          <hr>
+          <li>
+            <a href="{{ route('admin.category.index') }}"><i class="fa fa-fw fa-book"></i> @lang('messages.category')</a>
+          </li>
+          <li>
+            <a href="{{ route('admin.page.index') }}"><i class="fa fa-fw fa-newspaper-o"></i> @lang('messages.page')</a>
+          </li>
+          <hr>
+
+          <li>
+            <a href="{{ route('admin.property.index') }}"><i class="fa fa-fw fa-building-o"></i> @lang('messages.property')</a>
+          </li>
+          <hr>
+
+          <li>
+            <a href="{{ route('admin.partner.index') }}"><i class="fa fa-fw fa-users"></i> @lang('messages.partners')</a>
+          </li>
+          <hr>
+
+          <li>
+            <a href="{{ route('admin.settings.index') }}"><i class="fa fa-fw fa-phone"></i> @lang('messages.settings')</a>
+          </li>
         </ul>
       </div>
     </nav>
