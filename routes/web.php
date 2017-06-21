@@ -27,14 +27,42 @@ Route::group(['as' => 'admin.', 'middleware' => 'auth', 'namespace' => 'Admin', 
   Route::resource('user', 'UserController');
 
   Route::resource('slider', 'SliderController');
+  Route::resource('category', 'CategoryController');
+  Route::resource('page', 'PageController');
+  Route::resource('partner', 'PartnerController');
+  Route::resource('property', 'PropertyController');
+  Route::get('delete/propertyimage/{image}', ['as' => 'property.deleteimage', 'uses' => 'PropertyController@deleteimage']);
+
+  Route::get('settings', ['as' => 'settings.index', 'uses' => 'SettingsController@index']);
+  Route::put('settings/mupdate', ['as' => 'settings.mupdate', 'uses' => 'SettingsController@mupdate']);
 });
 
 // Frontend
 
-Route::get('/', function () {
-    return view('welcome');
-});
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+
+Route::group(['as' => 'frontend', 'namespace' => 'Frontend'], function() {
+  Route::get('/', 'HomeController@index');
+
+  Route::get('/category/{slug}', 'CategoryController@show');
+  Route::get('/page/{slug}', 'PageController@show');
+
+  Route::get('/contacts', 'ContactController@index');
+  Route::get('/property', 'PropertyController@index');
+  Route::get('/property/{slug}', 'PropertyController@show');
+
+
+
+});
+
+Route::post('/moreinfo', 'FrontendController@moreinfo');
+Route::post('/callme', 'FrontendController@callme');
+
+
+//Image resize on view
+Route::get('/resize/{h}/{w}',function($h=200, $w=200){
+  $img = Illuminate\Support\Facades\Input::get("img");
+  return \Image::make(public_path(urldecode($img)))->resize($h, $w)->response('jpg');
+ });
