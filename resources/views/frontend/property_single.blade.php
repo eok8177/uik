@@ -57,6 +57,10 @@
 					</div>
 				</div>
 
+				<div class="row">
+					<div class="addthis_inline_share_toolbox pull-right"></div>
+				</div>
+
 			</div>
 		</div>
 

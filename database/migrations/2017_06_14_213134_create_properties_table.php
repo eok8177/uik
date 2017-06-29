@@ -36,6 +36,8 @@ class CreatePropertiesTable extends Migration
 
             $table->string('status')->nullable(); //продано / зарезервировано
 
+            $table->unsignedInteger('visits')->nullable();
+
             $table->boolean('enabled')->nullable()->default(true);
 
             $table->timestamps();

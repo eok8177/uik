@@ -12,6 +12,7 @@
       <th>@lang('messages.title')</th>
       <th>@lang('messages.image')</th>
       <th>@lang('messages.enabled')</th>
+      <th>@lang('messages.visits')</th>
     </tr>
   </thead>
   @foreach($property as $item)
@@ -26,6 +27,7 @@
       <td>
         <a href="{{route('admin.ajax.status')}}" data-id="{{$item->id}}" data-model="Property" class="status fa fa-lg {{($item->enabled == 1) ? 'fa-check-circle text-success' : 'fa-times-circle text-danger'}}" aria-hidden="true"></a>
       </td>
+      <td class="text-center">{{$item->visits}}</td>
     </tr>
   @endforeach
 </table>

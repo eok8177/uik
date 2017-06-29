@@ -12,6 +12,10 @@
 
 				{!! $page->preview !!}
 
+				<div class="row">
+					<div class="addthis_inline_share_toolbox pull-right"></div>
+				</div>
+
 				<div class="photo-frame">
 					<img src="{{ $page->image }}" alt="{{ $page->title }}">
 				</div>

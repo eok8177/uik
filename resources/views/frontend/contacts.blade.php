@@ -30,11 +30,11 @@
 							<dd>{{ $settings['phone_mts'] }}</dd>
 						</dl>
 						<dl>
-							<dt>Телефон KS: </dt>
+							<dt>Телефон Київстар: </dt>
 							<dd>{{ $settings['phone_ks'] }}</dd>
 						</dl>
 						<dl>
-							<dt>Телефон KS: </dt>
+							<dt>Телефон Київстар: </dt>
 							<dd>{{ $settings['phone_ks2'] }}</dd>
 						</dl>
 					</div>

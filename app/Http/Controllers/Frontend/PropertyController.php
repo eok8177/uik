@@ -26,6 +26,14 @@ class PropertyController extends FrontendController
     {
         $property = Property::whereSlug($slug)->whereEnabled(1)->firstOrFail();
 
+// Cokie page views Count
+        $visits = (isset($_COOKIE["visits_post"])) ? $_COOKIE["visits_post"] : false;
+        if (!isset($visits[$slug])) {
+            setcookie("visits_post[$slug]",1,time()+3600*24*365);
+            $property->visits = $property->visits + 1;
+            $property->save();
+        }
+
         return view('frontend.property_single',[
             'property'  => $property,
             ]);

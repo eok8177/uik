@@ -25,6 +25,8 @@ class CreatePagesTable extends Migration
 
             $table->boolean('enabled')->nullable()->default(true);
 
+            $table->unsignedInteger('visits')->nullable();
+
             $table->timestamps();
         });
     }

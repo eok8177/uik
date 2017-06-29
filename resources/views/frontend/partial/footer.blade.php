@@ -4,6 +4,7 @@
 			<nav class="navigation">
 				<ul>
 					<li><strong class="title">Послуги</strong></li>
+					<li><a href="/property">Нерухомість</a></li>
 					@foreach($categories as $slug => $title)
 						<li class=""><a href="/category/{{$slug}}">{{$title}}</a></li>
 					@endforeach
@@ -56,6 +57,7 @@
 				</ul>
 			</div>
 			<div class="col">
+				<div id="google_translate_element" style="float: left;margin-top: 20px;margin-left: 20px;"></div>
 				<a href="http://ek.ks.ua" class="webdesign-by" target="_blank"><span>EK</span> Develop</a>
 			</div>
 		</div>
