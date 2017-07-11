@@ -23,6 +23,9 @@
 						<li><a href="/property?type=Дім">Будинки</a></li>
 						<li><a href="/property?type=Квартира">Квартири</a></li>
 						<li><a href="/property?type=Ділянка">Ділянки</a></li>
+						<li><a href="/property?type=Комерційна">Комерційна</a></li>
+						<li><a href="/property?type=Аренда">Аренда</a></li>
+						<li><a href="/property?type=Різне">Різне</a></li>
 					</ul>
 				</nav>
 

@@ -3285,14 +3285,14 @@ input.irs-to{
 }
 .description-list dt {
 	float: left;
-	width: 177px;
+	width: 140px;
 	padding: 3px 0;
 	border-bottom: 1px solid #bcbcbc;
 }
 .description-list dd {
 	margin: 0;
 	float: left;
-	width: 84px;
+	width: 130px;
 	vertical-align: top;
 	padding: 3px 0;
 	border-bottom: 1px solid #bcbcbc;
