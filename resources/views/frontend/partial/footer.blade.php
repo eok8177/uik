@@ -13,10 +13,9 @@
 					<li><strong class="title">Про компанію</strong></li>
 					<li><a href="/contacts">Контакти</a></li>
 				</ul>
-{{--         <ul>
-					<li><strong class="title">Block 3</strong></li>
-					<li><a href="#">link</a></li>
-				</ul> --}}
+        <ul>
+					<li><a href="http://map.land.gov.ua/kadastrova-karta" class="button" target="_blank">Перевірити кадастровий номер</a></li>
+				</ul>
 			</nav>
 			<form class="newsletter-form" action="/callme" method="post">
 				<fieldset>

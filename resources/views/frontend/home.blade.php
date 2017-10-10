@@ -25,7 +25,7 @@
 	<a class="btn-prev" href="#">Previous</a>
 	<a class="btn-next" href="#">Next</a>
 	<div class="pagination"></div>
-	<a href="#main" class="link-down">Down</a>
+	<a href="#footer" class="link-down">Down</a>
 </div>
 {{-- 
 <section id="main">

@@ -4,11 +4,12 @@
 	<meta http-equiv="Cache-control" content="public">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<meta name="keywords" content="{{$settings['keywords']}}">
+	<meta name="description" content="{{$settings['description']}}">
 	{{-- CSRF Token --}}
 	<meta name="csrf-token" content="{{ csrf_token() }}">
 	<title>{{ config('app.name', 'Laravel') }}</title>
-	<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,300,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css" media="none">
-	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css" media="none">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all">
 	<link href="/css/style.min.css" type="text/css" rel="stylesheet">
 	<!--[if gte IE 9]><link rel="stylesheet" type="text/css" href="assets/css/ie9.css" media="screen"/><![endif]-->
 	@yield('styles')

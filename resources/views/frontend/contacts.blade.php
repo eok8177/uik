@@ -71,8 +71,10 @@
 	<div class="map-holder">
 		<div class="map-frame">
 			<div class="overlay" onClick="style.pointerEvents='none'"></div>
+				{{-- <iframe width="100%" height="100%" frameborder="0" style="border:0"
+				src="https://www.google.com/maps/embed/v1/place?q=46.532705,+32.527574&key=AIzaSyA6FYOJ0yx0X8CUhzRQt6OKKpegltfAh8A" allowfullscreen></iframe> --}}
 				<iframe width="100%" height="100%" frameborder="0" style="border:0"
-				src="https://www.google.com/maps/embed/v1/place?q=46.532705,+32.527574&key=AIzaSyA6FYOJ0yx0X8CUhzRQt6OKKpegltfAh8A" allowfullscreen></iframe>
+				src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA6FYOJ0yx0X8CUhzRQt6OKKpegltfAh8A&q=ТОВ ЮГ ІНВЕСТ КАПІТАЛ" allowfullscreen></iframe>
 		</div>
 	</div>
 
